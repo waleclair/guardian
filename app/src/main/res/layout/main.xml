@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/myLinearView"
+    android:gravity="center">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:text=" Robot Log"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ef4545"
+        android:textColor="#050000"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:textAlignment="center" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionGroup="false"
+        android:clickable="false">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="New Text"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:scrollIndicators="start|right|end"
+        android:gravity="bottom" />
+    </ScrollView>
+
+</LinearLayout>
